@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be4397c13d346e5efa70a6196a17fb82 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be4397c13d346e5efa70a6196a17fb82" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be4397c13d346e5efa70a6196a17fb82 = L.map(
+                "map_be4397c13d346e5efa70a6196a17fb82",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2ccc76dfc91d158b6af111688972dda = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a2ccc76dfc91d158b6af111688972dda.addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var marker_0d514a629dc34360818f1c03dbd7da24 = L.marker(
+                [48.8534, 2.3488],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_6e3e429e2f3cf5abf13b391842a6ba3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "question-circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0d514a629dc34360818f1c03dbd7da24.setIcon(icon_6e3e429e2f3cf5abf13b391842a6ba3a);
+        
+    
+        var popup_08e9ace124f4e02c076987fd56182b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b22947328e792d47350652515c011320 = $(`<div id="html_b22947328e792d47350652515c011320" style="width: 100.0%; height: 100.0%;">Paris<br>Température : 14.93°C<br>light intensity drizzle</div>`)[0];
+                popup_08e9ace124f4e02c076987fd56182b6e.setContent(html_b22947328e792d47350652515c011320);
+            
+        
+
+        marker_0d514a629dc34360818f1c03dbd7da24.bindPopup(popup_08e9ace124f4e02c076987fd56182b6e)
+        ;
+
+        
+    
+    
+            var marker_c92d3675446ca5c8d55415bf64d2799c = L.marker(
+                [40.7143, -74.006],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_e62ae6cd8c7d2eb3d8305852acff9c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c92d3675446ca5c8d55415bf64d2799c.setIcon(icon_e62ae6cd8c7d2eb3d8305852acff9c6a);
+        
+    
+        var popup_9ed6172c53c557495e7d5834f0a29654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15c7c57f9b88ea4da9ca2a2f6ec10a72 = $(`<div id="html_15c7c57f9b88ea4da9ca2a2f6ec10a72" style="width: 100.0%; height: 100.0%;">New York<br>Température : 17.46°C<br>clear sky</div>`)[0];
+                popup_9ed6172c53c557495e7d5834f0a29654.setContent(html_15c7c57f9b88ea4da9ca2a2f6ec10a72);
+            
+        
+
+        marker_c92d3675446ca5c8d55415bf64d2799c.bindPopup(popup_9ed6172c53c557495e7d5834f0a29654)
+        ;
+
+        
+    
+    
+            var marker_269c22c07572f3af0edcda34e7b181a0 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_ffcfec4bc6a4bb321b612b7155b5c3ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_269c22c07572f3af0edcda34e7b181a0.setIcon(icon_ffcfec4bc6a4bb321b612b7155b5c3ca);
+        
+    
+        var popup_657685f7200130f1e5b8e5bed5866f16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43b2c322076d5c947d0d15fc45b761ae = $(`<div id="html_43b2c322076d5c947d0d15fc45b761ae" style="width: 100.0%; height: 100.0%;">Tokyo<br>Température : 20.36°C<br>broken clouds</div>`)[0];
+                popup_657685f7200130f1e5b8e5bed5866f16.setContent(html_43b2c322076d5c947d0d15fc45b761ae);
+            
+        
+
+        marker_269c22c07572f3af0edcda34e7b181a0.bindPopup(popup_657685f7200130f1e5b8e5bed5866f16)
+        ;
+
+        
+    
+    
+            var marker_a8bb653c6d536e24c1bca1d4b5f6510b = L.marker(
+                [-33.8679, 151.2073],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_2f2475550cb583f7b2e90bf113f1dac0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud-showers-heavy", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a8bb653c6d536e24c1bca1d4b5f6510b.setIcon(icon_2f2475550cb583f7b2e90bf113f1dac0);
+        
+    
+        var popup_203cbac57120db84c9318ebe27993e1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd851d5da51ed774a5e3d3bba7b230ce = $(`<div id="html_cd851d5da51ed774a5e3d3bba7b230ce" style="width: 100.0%; height: 100.0%;">Sydney<br>Température : 13.14°C<br>light rain</div>`)[0];
+                popup_203cbac57120db84c9318ebe27993e1e.setContent(html_cd851d5da51ed774a5e3d3bba7b230ce);
+            
+        
+
+        marker_a8bb653c6d536e24c1bca1d4b5f6510b.bindPopup(popup_203cbac57120db84c9318ebe27993e1e)
+        ;
+
+        
+    
+    
+            var marker_1dadf4f4fdf83fa5da6ba4ae2e151eb4 = L.marker(
+                [33.9911, -6.8401],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_f29a666060f716f721c20ee50de0b65b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud-sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1dadf4f4fdf83fa5da6ba4ae2e151eb4.setIcon(icon_f29a666060f716f721c20ee50de0b65b);
+        
+    
+        var popup_cc769d2a2b44932e37741a8c48450b88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bed7739aeaefe5b8be7cfc8239265bd = $(`<div id="html_5bed7739aeaefe5b8be7cfc8239265bd" style="width: 100.0%; height: 100.0%;">Rabat<br>Température : 16.04°C<br>few clouds</div>`)[0];
+                popup_cc769d2a2b44932e37741a8c48450b88.setContent(html_5bed7739aeaefe5b8be7cfc8239265bd);
+            
+        
+
+        marker_1dadf4f4fdf83fa5da6ba4ae2e151eb4.bindPopup(popup_cc769d2a2b44932e37741a8c48450b88)
+        ;
+
+        
+    
+    
+            var marker_b9ccc4fc2e85f43b7fc49b07ee9c8dca = L.marker(
+                [51.5085, -0.1257],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_2ae45eebc1204c21cceba1fc669f432c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud-sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b9ccc4fc2e85f43b7fc49b07ee9c8dca.setIcon(icon_2ae45eebc1204c21cceba1fc669f432c);
+        
+    
+        var popup_38d00f9df3f2f5afd82730424b1da545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd008cea4b1308cb6b5deace05658716 = $(`<div id="html_cd008cea4b1308cb6b5deace05658716" style="width: 100.0%; height: 100.0%;">London<br>Température : 13.01°C<br>few clouds</div>`)[0];
+                popup_38d00f9df3f2f5afd82730424b1da545.setContent(html_cd008cea4b1308cb6b5deace05658716);
+            
+        
+
+        marker_b9ccc4fc2e85f43b7fc49b07ee9c8dca.bindPopup(popup_38d00f9df3f2f5afd82730424b1da545)
+        ;
+
+        
+    
+    
+            var marker_f4a498c6030125c06ea20031d43bf3c8 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_5ddd60e07b64f872e216095205473980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f4a498c6030125c06ea20031d43bf3c8.setIcon(icon_5ddd60e07b64f872e216095205473980);
+        
+    
+        var popup_006b9d0d9f2f676e4a455342f955b941 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a579a3f0713d7dca6c81935de58fa52e = $(`<div id="html_a579a3f0713d7dca6c81935de58fa52e" style="width: 100.0%; height: 100.0%;">Los Angeles<br>Température : 22.85°C<br>clear sky</div>`)[0];
+                popup_006b9d0d9f2f676e4a455342f955b941.setContent(html_a579a3f0713d7dca6c81935de58fa52e);
+            
+        
+
+        marker_f4a498c6030125c06ea20031d43bf3c8.bindPopup(popup_006b9d0d9f2f676e4a455342f955b941)
+        ;
+
+        
+    
+    
+            var marker_8c3adb93c6c8d4e81d08452fc7ced021 = L.marker(
+                [39.9075, 116.3972],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_f2e088035322237ac1b838821aca91fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8c3adb93c6c8d4e81d08452fc7ced021.setIcon(icon_f2e088035322237ac1b838821aca91fc);
+        
+    
+        var popup_47cb98be4a409bec404d4bc7255b2993 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207f56d9f6ffa74ee630cff22ccc69e8 = $(`<div id="html_207f56d9f6ffa74ee630cff22ccc69e8" style="width: 100.0%; height: 100.0%;">Beijing<br>Température : 7.94°C<br>clear sky</div>`)[0];
+                popup_47cb98be4a409bec404d4bc7255b2993.setContent(html_207f56d9f6ffa74ee630cff22ccc69e8);
+            
+        
+
+        marker_8c3adb93c6c8d4e81d08452fc7ced021.bindPopup(popup_47cb98be4a409bec404d4bc7255b2993)
+        ;
+
+        
+    
+    
+            var marker_30321f873878b1b0cf03d78f53e0a18e = L.marker(
+                [55.7522, 37.6156],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_e6616fe0116b4dfc6730b769916cb7f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30321f873878b1b0cf03d78f53e0a18e.setIcon(icon_e6616fe0116b4dfc6730b769916cb7f4);
+        
+    
+        var popup_37c673178a82d532d69044cebe0289c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a5663f81c76edac6f1b3669dbfbadef = $(`<div id="html_1a5663f81c76edac6f1b3669dbfbadef" style="width: 100.0%; height: 100.0%;">Moscow<br>Température : 16.56°C<br>overcast clouds</div>`)[0];
+                popup_37c673178a82d532d69044cebe0289c8.setContent(html_1a5663f81c76edac6f1b3669dbfbadef);
+            
+        
+
+        marker_30321f873878b1b0cf03d78f53e0a18e.bindPopup(popup_37c673178a82d532d69044cebe0289c8)
+        ;
+
+        
+    
+    
+            var marker_faf50224d0d782e86b2b4b13fe75310d = L.marker(
+                [25.2582, 55.3047],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_a747e98d5eabee26c5db1113dfe3ac22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_faf50224d0d782e86b2b4b13fe75310d.setIcon(icon_a747e98d5eabee26c5db1113dfe3ac22);
+        
+    
+        var popup_0af62f4b5b68b59b89ff376154eae817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5fdca912aecbb81a204dfd22c5435b5 = $(`<div id="html_b5fdca912aecbb81a204dfd22c5435b5" style="width: 100.0%; height: 100.0%;">Dubai<br>Température : 31.32°C<br>clear sky</div>`)[0];
+                popup_0af62f4b5b68b59b89ff376154eae817.setContent(html_b5fdca912aecbb81a204dfd22c5435b5);
+            
+        
+
+        marker_faf50224d0d782e86b2b4b13fe75310d.bindPopup(popup_0af62f4b5b68b59b89ff376154eae817)
+        ;
+
+        
+    
+    
+            var marker_780d8c6f3a7339d8dc774350edabd3c6 = L.marker(
+                [-22.9028, -43.2075],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_1f446d20871cc2c8751f2b902d37847a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_780d8c6f3a7339d8dc774350edabd3c6.setIcon(icon_1f446d20871cc2c8751f2b902d37847a);
+        
+    
+        var popup_d4690efb07c9dc52095928afa9a8d294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9c2dec5595f2eff6d427940139a29c7 = $(`<div id="html_f9c2dec5595f2eff6d427940139a29c7" style="width: 100.0%; height: 100.0%;">Rio de Janeiro<br>Température : 29.22°C<br>clear sky</div>`)[0];
+                popup_d4690efb07c9dc52095928afa9a8d294.setContent(html_f9c2dec5595f2eff6d427940139a29c7);
+            
+        
+
+        marker_780d8c6f3a7339d8dc774350edabd3c6.bindPopup(popup_d4690efb07c9dc52095928afa9a8d294)
+        ;
+
+        
+    
+    
+            var marker_30cc03b382a3183545f4aae9f4e6a197 = L.marker(
+                [30.0626, 31.2497],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_d08fbd4550d604d17dfe68b44e3288a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30cc03b382a3183545f4aae9f4e6a197.setIcon(icon_d08fbd4550d604d17dfe68b44e3288a0);
+        
+    
+        var popup_6ef35f42391ea34215f1d8ab5b1ab880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c80358ecf76a229afac32bbd5bd4995d = $(`<div id="html_c80358ecf76a229afac32bbd5bd4995d" style="width: 100.0%; height: 100.0%;">Cairo<br>Température : 21.42°C<br>scattered clouds</div>`)[0];
+                popup_6ef35f42391ea34215f1d8ab5b1ab880.setContent(html_c80358ecf76a229afac32bbd5bd4995d);
+            
+        
+
+        marker_30cc03b382a3183545f4aae9f4e6a197.bindPopup(popup_6ef35f42391ea34215f1d8ab5b1ab880)
+        ;
+
+        
+    
+    
+            var marker_3194abafa37a53f64bb590554b9b3d27 = L.marker(
+                [52.5244, 13.4105],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_7c8597382e4803785505bde6ec7ab819 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3194abafa37a53f64bb590554b9b3d27.setIcon(icon_7c8597382e4803785505bde6ec7ab819);
+        
+    
+        var popup_cf36a374e06b631ae1667bc8de4270e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d265c482d4abb4b9ac81b977e583c5c5 = $(`<div id="html_d265c482d4abb4b9ac81b977e583c5c5" style="width: 100.0%; height: 100.0%;">Berlin<br>Température : 20.09°C<br>clear sky</div>`)[0];
+                popup_cf36a374e06b631ae1667bc8de4270e3.setContent(html_d265c482d4abb4b9ac81b977e583c5c5);
+            
+        
+
+        marker_3194abafa37a53f64bb590554b9b3d27.bindPopup(popup_cf36a374e06b631ae1667bc8de4270e3)
+        ;
+
+        
+    
+    
+            var marker_d0d359f2210d4e812f3ba22caa64f567 = L.marker(
+                [43.7001, -79.4163],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_00c440f4c4d4c97e4278a5278a61fba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d0d359f2210d4e812f3ba22caa64f567.setIcon(icon_00c440f4c4d4c97e4278a5278a61fba2);
+        
+    
+        var popup_c0f8a8c774469c9838b4089d6971392f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7823acfa28405074f2c5f308fc6eaaf1 = $(`<div id="html_7823acfa28405074f2c5f308fc6eaaf1" style="width: 100.0%; height: 100.0%;">Toronto<br>Température : 12.18°C<br>broken clouds</div>`)[0];
+                popup_c0f8a8c774469c9838b4089d6971392f.setContent(html_7823acfa28405074f2c5f308fc6eaaf1);
+            
+        
+
+        marker_d0d359f2210d4e812f3ba22caa64f567.bindPopup(popup_c0f8a8c774469c9838b4089d6971392f)
+        ;
+
+        
+    
+    
+            var marker_d1cfb0fda373d344cb8aa8c86c94b180 = L.marker(
+                [19.4285, -99.1277],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_be8a8a2aec132488c9a87365db269677 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sun", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d1cfb0fda373d344cb8aa8c86c94b180.setIcon(icon_be8a8a2aec132488c9a87365db269677);
+        
+    
+        var popup_a0f81f2880fbba7f17cb6eb6467f03fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f70fc8f1a82013976154f638f8208b4 = $(`<div id="html_1f70fc8f1a82013976154f638f8208b4" style="width: 100.0%; height: 100.0%;">Mexico City<br>Température : 27.75°C<br>clear sky</div>`)[0];
+                popup_a0f81f2880fbba7f17cb6eb6467f03fc.setContent(html_1f70fc8f1a82013976154f638f8208b4);
+            
+        
+
+        marker_d1cfb0fda373d344cb8aa8c86c94b180.bindPopup(popup_a0f81f2880fbba7f17cb6eb6467f03fc)
+        ;
+
+        
+    
+    
+            var marker_0d19b3c57b5e19aa4cf80c2ea9a5923d = L.marker(
+                [13.75, 100.5167],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_577e5c0b304ba8644926074fec54d892 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0d19b3c57b5e19aa4cf80c2ea9a5923d.setIcon(icon_577e5c0b304ba8644926074fec54d892);
+        
+    
+        var popup_1695d0a91da20dbce3f768252118a411 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2595ce005539c6f00561429211ac40e7 = $(`<div id="html_2595ce005539c6f00561429211ac40e7" style="width: 100.0%; height: 100.0%;">Bangkok<br>Température : 31.95°C<br>overcast clouds</div>`)[0];
+                popup_1695d0a91da20dbce3f768252118a411.setContent(html_2595ce005539c6f00561429211ac40e7);
+            
+        
+
+        marker_0d19b3c57b5e19aa4cf80c2ea9a5923d.bindPopup(popup_1695d0a91da20dbce3f768252118a411)
+        ;
+
+        
+    
+    
+            var marker_a87d4da4b2ad4f4b700aa4954be47d7b = L.marker(
+                [1.2897, 103.8501],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_6aa6b090a72430fcc5893f6a4a584b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a87d4da4b2ad4f4b700aa4954be47d7b.setIcon(icon_6aa6b090a72430fcc5893f6a4a584b1d);
+        
+    
+        var popup_4486c3d3915c37c0a6ddf4fa1be99865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5210e34f90bd6708deb9a0005c19501 = $(`<div id="html_b5210e34f90bd6708deb9a0005c19501" style="width: 100.0%; height: 100.0%;">Singapore<br>Température : 28.87°C<br>broken clouds</div>`)[0];
+                popup_4486c3d3915c37c0a6ddf4fa1be99865.setContent(html_b5210e34f90bd6708deb9a0005c19501);
+            
+        
+
+        marker_a87d4da4b2ad4f4b700aa4954be47d7b.bindPopup(popup_4486c3d3915c37c0a6ddf4fa1be99865)
+        ;
+
+        
+    
+    
+            var marker_b14e5a8f25bcece59982fe3c4bc777a6 = L.marker(
+                [41.0351, 28.9833],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_18a2956489e27cd9173c075a59766dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b14e5a8f25bcece59982fe3c4bc777a6.setIcon(icon_18a2956489e27cd9173c075a59766dbd);
+        
+    
+        var popup_825547c74df48e6211184bbabfab6ade = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3d7f0ef126b576d8049c9849bc3ce2b = $(`<div id="html_f3d7f0ef126b576d8049c9849bc3ce2b" style="width: 100.0%; height: 100.0%;">Istanbul<br>Température : 14.29°C<br>broken clouds</div>`)[0];
+                popup_825547c74df48e6211184bbabfab6ade.setContent(html_f3d7f0ef126b576d8049c9849bc3ce2b);
+            
+        
+
+        marker_b14e5a8f25bcece59982fe3c4bc777a6.bindPopup(popup_825547c74df48e6211184bbabfab6ade)
+        ;
+
+        
+    
+    
+            var marker_cded22cd30b5ba449e8bb3281003d864 = L.marker(
+                [19.0144, 72.8479],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_cb6670a9b75033d54af837d4cac620ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "smoke", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cded22cd30b5ba449e8bb3281003d864.setIcon(icon_cb6670a9b75033d54af837d4cac620ed);
+        
+    
+        var popup_c2e545f7ca8f1e15da097b8b7933a516 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b53f0c9561a440b8de0f304a6c37016 = $(`<div id="html_3b53f0c9561a440b8de0f304a6c37016" style="width: 100.0%; height: 100.0%;">Mumbai<br>Température : 29.99°C<br>smoke</div>`)[0];
+                popup_c2e545f7ca8f1e15da097b8b7933a516.setContent(html_3b53f0c9561a440b8de0f304a6c37016);
+            
+        
+
+        marker_cded22cd30b5ba449e8bb3281003d864.bindPopup(popup_c2e545f7ca8f1e15da097b8b7933a516)
+        ;
+
+        
+    
+    
+            var marker_10d88973639ae1213d4644881cf18ea8 = L.marker(
+                [37.5683, 126.9778],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_0f956ef47d97f3560247e45f570cd22f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_10d88973639ae1213d4644881cf18ea8.setIcon(icon_0f956ef47d97f3560247e45f570cd22f);
+        
+    
+        var popup_5bb2e9c4143b5892f2f8aa9bd45a9496 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b10552658f77807f484c13866e056c1 = $(`<div id="html_6b10552658f77807f484c13866e056c1" style="width: 100.0%; height: 100.0%;">Seoul<br>Température : 14.66°C<br>overcast clouds</div>`)[0];
+                popup_5bb2e9c4143b5892f2f8aa9bd45a9496.setContent(html_6b10552658f77807f484c13866e056c1);
+            
+        
+
+        marker_10d88973639ae1213d4644881cf18ea8.bindPopup(popup_5bb2e9c4143b5892f2f8aa9bd45a9496)
+        ;
+
+        
+    
+    
+            var marker_5cb32333d58186593ffdaee1a97e8e9f = L.marker(
+                [34.257, -85.1647],
+                {}
+            ).addTo(map_be4397c13d346e5efa70a6196a17fb82);
+        
+    
+            var icon_394fe50599f657ea2c36e8f0e1e88173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5cb32333d58186593ffdaee1a97e8e9f.setIcon(icon_394fe50599f657ea2c36e8f0e1e88173);
+        
+    
+        var popup_e1e0f40edd76937cc6c4750f227c07a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6edf2c6bdf781a807f25df60310b5c9 = $(`<div id="html_a6edf2c6bdf781a807f25df60310b5c9" style="width: 100.0%; height: 100.0%;">Rome<br>Température : 24.63°C<br>scattered clouds</div>`)[0];
+                popup_e1e0f40edd76937cc6c4750f227c07a8.setContent(html_a6edf2c6bdf781a807f25df60310b5c9);
+            
+        
+
+        marker_5cb32333d58186593ffdaee1a97e8e9f.bindPopup(popup_e1e0f40edd76937cc6c4750f227c07a8)
+        ;
+
+        
+    
+</script>
+</html>
